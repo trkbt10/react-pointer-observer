@@ -12,10 +12,21 @@
     "dev": "vite",
     "test": "vitest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "react",
+    "pointer-events",
+    "hooks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trkbt10/react-pointer-observer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trkbt10/react-pointer-observer/issues"
+  },
+  "author": "trkbt10 <triplequartet@gmail.com>",
+  "license": "Unlicense",
+  "description": "React UI hook that make pointer-events easier to use.",
   "devDependencies": {
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
