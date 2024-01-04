@@ -13,7 +13,7 @@ const viteConfig = defineConfig({
   build: {
     outDir: "dist",
     lib: {
-      entry: path.resolve(__dirname, "src/index.tsx"),
+      entry: "src/index.ts",
       formats: ["es", "cjs"],
       fileName: (format) => {
         if (format === "es") return "[name].mjs";
@@ -37,10 +37,9 @@ const viteConfig = defineConfig({
       include: "./src/**/*.tsx",
     }),
     dts({
-      insertTypesEntry: true,
+      rollupTypes: true,
       outDir: "dist",
-      include: "./src/**/*.ts",
-      entryRoot: "./src",
+      include: "./src/**/*",
     }),
   ],
 });

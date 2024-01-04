@@ -8,18 +8,9 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
-    "emitDeclarationOnly": true,
-    "declarationDir": "dist/types",
     "strict": true,
     "skipLibCheck": true,
     "types": ["vitest/globals", "vite/client"]
   },
-  "include": [
-    "./src/**/*",
-    "./__tests__/**/*",
-    "scripts/generate-screenshot.mjs",
-    "examples/App.tsx",
-    "examples/index.tsx",
-    "examples/index.dev.tsx"
-  ]
+  "include": ["./src/**/*", "./__tests__/**/*", "./examples/**/*"]
 }
