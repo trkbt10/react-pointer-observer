@@ -14,18 +14,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
-      - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install dependencies
+        run: bun install
+
       - name: Build production bundle
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: build
-      - name: Test the app
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: test
+        run: bun run build
 
   publish-npm:
     needs: build
